@@ -151,50 +151,37 @@ button:hover {
 
 @media (max-width: 600px) {
    .schedule-result {
-        padding: 10px;
+        padding: 5px;
     }
-
     .schedule-table {
         display: block;
         width: 100%;
-        overflow-x: auto; 
-        -webkit-overflow-scrolling: touch;
-        font-size: 10px;
+        overflow-x: auto;
+        font-size: 8px;           
+        table-layout: fixed;     
     }
-
     .schedule-table th,
     .schedule-table td {
-        padding: 4px;
-        white-space: nowrap; 
-        font-size: 10px;
+        padding: 2px 3px;         
+        white-space: nowrap;
+        text-overflow: ellipsis;  
+        overflow: hidden;
+        font-size: 8px;
     }
-
     .schedule-table th:first-child,
     .schedule-table td:first-child {
-        width: 50px;
+        width: 30px;            
+        font-size: 8px;
+    }
+    .schedule-table th:not(:first-child) {
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);  
+        padding: 2px 3px;
+        font-size: 8px;
+    }
+    .buttons-format button {
         font-size: 10px;
-    }
-
-    .buttons-format button {
-        font-size: 12px;
-        padding: 6px 8px;
-        margin-bottom: 5px;
-    }
-}
-
-
-@media (max-width: 900px) and (min-width: 601px) {
-    .schedule-table {
-        font-size: 11px;
-    }
-
-    .schedule-table th,
-    .schedule-table td {
-        padding: 6px;
-    }
-
-    .buttons-format button {
-        padding: 7px 12px;
-        font-size: 13px;
+        padding: 4px 6px;
+        margin-bottom: 3px;
     }
 }
