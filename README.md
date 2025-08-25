@@ -1,0 +1,1 @@
+This project is a website where you can generate a study schedule based on your available time slots, subjects to study, and the time you want or need to devote to them each week. This website allows you to download your weekly schedule in PDF format.
