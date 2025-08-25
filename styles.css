@@ -150,53 +150,34 @@ button:hover {
 }
 
 @media (max-width: 600px) {
-    .container {
+   .schedule-result {
         padding: 10px;
-        margin: 8px;
-    }
-
-    h1, h2, h3, p {
-        font-size: 14px;
-    }
-
-    input[type="text"], 
-    input[type="number"], 
-    input[type="time"], 
-    select {
-        font-size: 14px;
-        padding: 6px;
-    }
-
-    button {
-        font-size: 14px;
-        padding: 8px 12px;
-    }
-
-    .time-slot {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .time-slot input {
-        width: 100%;
     }
 
     .schedule-table {
-        font-size: 10px;
         display: block;
-        overflow-x: auto; 
         width: 100%;
+        overflow-x: auto; 
+        -webkit-overflow-scrolling: touch;
+        font-size: 10px;
     }
 
-    .schedule-table th, 
+    .schedule-table th,
     .schedule-table td {
         padding: 4px;
+        white-space: nowrap; 
+        font-size: 10px;
+    }
+
+    .schedule-table th:first-child,
+    .schedule-table td:first-child {
+        width: 50px;
         font-size: 10px;
     }
 
     .buttons-format button {
-        padding: 6px 10px;
         font-size: 12px;
+        padding: 6px 8px;
         margin-bottom: 5px;
     }
 }
