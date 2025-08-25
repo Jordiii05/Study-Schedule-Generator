@@ -1,0 +1,150 @@
+body {
+    font-family: Verdana, sans-serif;
+    background-color: white;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, p {
+    text-align: center;
+    color: #283b4e;
+}
+
+.container {
+    max-width: 750px;
+    margin: 16px auto;
+    padding: 16px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 10px rgba(0,0,0,0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 16px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"], 
+input[type="number"], 
+input[type="time"], 
+select {
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid gray;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: lightblue;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: lightblue;
+}
+
+.subject-input {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 15px;
+}
+
+.day-availability {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fafafa;
+}
+
+.day-availability h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.time-slot {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.time-slot input {
+    width: 120px;
+}
+
+.time-slot button {
+    background-color: red;
+}
+
+.time-slot button:hover {
+    background-color: red;
+}
+
+.schedule-result {
+    margin-top: 20px;
+}
+
+.schedule-result h2 {
+    margin-bottom: 15px;
+    color: lightgreen;
+}
+.schedule-result div {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: lightgray;
+
+}
+.buttons-format button{
+    padding: 8px 16px;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.schedule-table {
+  border-collapse: collapse;
+  width: 100%;                  
+  table-layout: fixed;   
+  text-align: center;
+  margin-top: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.schedule-table th,
+.schedule-table td {
+  border: 1px solid gray;
+  padding: 8px;
+  word-wrap: break-word;
+  font-size: 12px;
+}
+
+.schedule-table th {
+  background-color: lightyellow;
+  font-weight: bold;
+  padding: 8px 4px;
+  font-size: 12px;
+}
+
+.schedule-table td:first-child {
+  background-color: lightyellow;
+  font-weight: bold;
+  width: 100px; 
+  font-size: 12px;
+}
